@@ -33,7 +33,7 @@ public class Main {
             operand1 = Integer.parseInt(split[0]);
             operand2 = Integer.parseInt(split[2]);
         }
-        if (operand1 > 10 || operand2 > 10) {
+       if (operand1 < 1 || operand1 > 10 || operand2 < 1 || operand2 > 10) {
             throw new IllegalArgumentException("We work with numbers from 1 to 10 inclusive.");
         }
 
